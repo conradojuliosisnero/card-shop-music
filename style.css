@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.contenedor__principal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.contenedor__principal .card {
+  width: 450px;
+  height: 700px;
+  display: flex;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 7px 25px 0px hsl(224, 23%, 55%);
+}
+.contenedor__principal .card .card__img {
+  display: flex;
+  width: 100%;
+}
+.contenedor__principal .card .card__img .img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contenedor__principal .card .card__contenido {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contenedor__principal .card .card__contenido .card__titulo {
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display", sans-serif;
+}
+.contenedor__principal .card .card__contenido .card__texto {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 3;
+}
+.contenedor__principal .card .card__contenido .card__texto .texto {
+  flex-basis: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 28px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+.contenedor__principal .card .card__contenido .card__suscripcion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor__principal .card .card__contenido .card__suscripcion .card__suscripcion--icono {
+  flex-shrink: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+}
+.contenedor__principal .card .card__contenido .card__suscripcion .card__suscripcion--icono .icono {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 45px;
+}
+.contenedor__principal .card .card__contenido .card__suscripcion .card__suscripcion--texto {
+  width: 100%;
+  font-weight: 700;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+.contenedor__principal .card .card__contenido .card__suscripcion .card__suscripcion--texto .texto {
+  color: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display", sans-serif;
+}
+.contenedor__principal .card .card__contenido .card__suscripcion .card__suscripcion--texto .precio {
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.contenedor__principal .card .card__contenido .card__suscripcion--cambio {
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contenedor__principal .card .card__contenido .card__suscripcion--cambio:hover {
+  color: #9a73d1;
+}
+.contenedor__principal .card .card__botones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor__principal .card .card__botones .btn__pago {
+  width: 100%;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  padding: 10px 0px;
+  margin: 20px 0px;
+  box-shadow: 0px 2px 7px 0px hsl(245, 75%, 52%);
+  cursor: pointer;
+}
+.contenedor__principal .card .card__botones .btn__pago:hover {
+  background-color: #9a73d1;
+  box-shadow: 0px 2px 7px 0px #9a73d1;
+}
+.contenedor__principal .card .card__botones .btn__cancelar {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.contenedor__principal .card .card__botones .btn__cancelar:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 735px) {
+  body .contenedor__principal {
+    width: 90%;
+    margin-top: 90px;
+  }
+  body .contenedor__principal .card {
+    width: 450px;
+    height: 700px;
+  }
+  body .card__contenido .card__titulo {
+    font-size: 25px;
+  }
+  body .card__contenido .card__texto {
+    width: 100%;
+  }
+  body .card__contenido .card__texto .texto {
+    width: 100%;
+    font-size: 15px;
+  }
+  body .card__contenido .card__suscripcion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .card__contenido .card__suscripcion .card__suscripcion--icono .icono {
+    width: 35px;
+  }
+  body .card__contenido .card__suscripcion .card__suscripcion--texto {
+    padding-left: 10px;
+  }
+  body .card__contenido .card__suscripcion--cambio {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  body .card__contenido .card__botones .btn__pago {
+    padding: 15px 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
