@@ -183,6 +183,7 @@ body {
 @media screen and (max-width: 735px) {
   body .contenedor__principal {
     width: 90%;
+    height: 100vh;
     margin-top: 20px;
   }
   body .contenedor__principal .card {
